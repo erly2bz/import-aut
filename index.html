@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="pl" class="scroll-smooth">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>USA DIRECT - Import Aut z USA i Kanady</title>
-    <meta name="description" content="Kompleksowa obsługa importu aut z USA i Kanady. Oszczędź do 40% na wymarzonym samochodzie.">
+    <title>NAZWA FIRMY - Import Aut z USA i Kanady</title>
+    <meta name="description"
+        content="Kompleksowa obsługa importu aut z USA i Kanady. Oszczędź do 40% na wymarzonym samochodzie.">
     <!-- Tailwind CSS (CDN for quick setup) -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Google Fonts: Inter -->
@@ -30,6 +32,7 @@
             color: white;
             -webkit-font-smoothing: antialiased;
         }
+
         /* Glassmorphism Navigation */
         .glass-nav {
             background: rgba(10, 10, 10, 0.7);
@@ -37,22 +40,26 @@
             -webkit-backdrop-filter: blur(16px);
             border-bottom: 1px solid rgba(255, 255, 255, 0.05);
         }
+
         /* Image Placeholder Styling */
         .placeholder-gradient {
             background: linear-gradient(135deg, #121212 0%, #0a0a0a 100%);
             border: 1px dashed rgba(255, 255, 255, 0.15);
         }
+
         /* Stats Cards Styling */
         .stat-card {
             background: linear-gradient(145deg, rgba(255, 255, 255, 0.03) 0%, rgba(255, 255, 255, 0.01) 100%);
             border: 1px solid rgba(255, 255, 255, 0.05);
             transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
         }
+
         .stat-card:hover {
             transform: translateY(-5px);
             border-color: rgba(59, 130, 246, 0.4);
             box-shadow: 0 10px 30px -10px rgba(59, 130, 246, 0.2);
         }
+
         /* Ambient Glow behind Hero */
         .hero-glow {
             position: absolute;
@@ -68,6 +75,7 @@
         }
     </style>
 </head>
+
 <body class="font-sans selection:bg-blue-500 selection:text-white">
 
     <!-- Sticky Navigation -->
@@ -76,21 +84,28 @@
             <div class="flex justify-between items-center h-20">
                 <!-- Logo -->
                 <div class="flex-shrink-0 flex items-center">
-                    <a href="#" class="text-2xl tracking-tight text-white m-0">USA <span class='text-blue-500 font-bold'>DIRECT</span></a>
+                    <a href="#" class="text-2xl tracking-tight text-white m-0">LOGO <span
+                            class='text-blue-500 font-bold'>FIRMY</span></a>
                 </div>
                 <!-- Desktop Links -->
                 <div class="hidden md:flex space-x-8 items-center">
-                    <a href="#proces" class="text-sm font-medium text-slate-300 hover:text-white transition-colors duration-200">Proces</a>
-                    <a href="#korzysci" class="text-sm font-medium text-slate-300 hover:text-white transition-colors duration-200">Korzyści</a>
-                    <a href="realizacje.html" class="text-sm font-medium text-slate-300 hover:text-white transition-colors duration-200">Realizacje</a>
-                    <a href="#kalkulator" class="text-sm font-medium text-slate-300 hover:text-white transition-colors duration-200">Kalkulator</a>
-                    <a href="#kontakt" class="px-5 py-2.5 text-sm font-medium text-white bg-blue-600 hover:bg-blue-500 rounded-full transition-all duration-200 transform hover:scale-105 shadow-[0_0_15px_rgba(59,130,246,0.4)]">Kontakt</a>
+                    <a href="#proces"
+                        class="text-sm font-medium text-slate-300 hover:text-white transition-colors duration-200">Proces</a>
+                    <a href="#korzysci"
+                        class="text-sm font-medium text-slate-300 hover:text-white transition-colors duration-200">Korzyści</a>
+                    <a href="realizacje.html"
+                        class="text-sm font-medium text-slate-300 hover:text-white transition-colors duration-200">Realizacje</a>
+                    <a href="#kalkulator"
+                        class="text-sm font-medium text-slate-300 hover:text-white transition-colors duration-200">Kalkulator</a>
+                    <a href="#kontakt"
+                        class="px-5 py-2.5 text-sm font-medium text-white bg-blue-600 hover:bg-blue-500 rounded-full transition-all duration-200 transform hover:scale-105 shadow-[0_0_15px_rgba(59,130,246,0.4)]">Kontakt</a>
                 </div>
                 <!-- Mobile Menu Button -->
                 <div class="md:hidden flex items-center">
                     <button class="text-slate-300 hover:text-white transition-colors">
                         <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16" />
                         </svg>
                     </button>
                 </div>
@@ -98,23 +113,30 @@
         </div>
 
         <!-- Mobile Menu -->
-        <div id="mobile-menu" class="hidden md:hidden bg-black/95 backdrop-blur-xl border-t border-white/10 absolute w-full transition-all duration-300 transform origin-top shadow-2xl">
+        <div id="mobile-menu"
+            class="hidden md:hidden bg-black/95 backdrop-blur-xl border-t border-white/10 absolute w-full transition-all duration-300 transform origin-top shadow-2xl">
             <div class="px-4 pt-4 pb-8 space-y-2 flex flex-col">
-                <a href="#proces" class="mobile-link block px-4 py-3 text-base font-medium text-slate-300 hover:text-white hover:bg-white/10 rounded-xl transition-colors">Proces</a>
-                <a href="#korzysci" class="mobile-link block px-4 py-3 text-base font-medium text-slate-300 hover:text-white hover:bg-white/10 rounded-xl transition-colors">Korzyści</a>
-                <a href="realizacje.html" class="mobile-link block px-4 py-3 text-base font-medium text-slate-300 hover:text-white hover:bg-white/10 rounded-xl transition-colors">Realizacje</a>
-                <a href="#kalkulator" class="mobile-link block px-4 py-3 text-base font-medium text-slate-300 hover:text-white hover:bg-white/10 rounded-xl transition-colors">Kalkulator</a>
-                <a href="#kontakt" class="mobile-link block px-4 py-3 mt-4 text-center text-base font-medium text-white bg-blue-600 hover:bg-blue-500 rounded-xl transition-all duration-200 shadow-[0_0_15px_rgba(59,130,246,0.4)]">Kontakt</a>
+                <a href="#proces"
+                    class="mobile-link block px-4 py-3 text-base font-medium text-slate-300 hover:text-white hover:bg-white/10 rounded-xl transition-colors">Proces</a>
+                <a href="#korzysci"
+                    class="mobile-link block px-4 py-3 text-base font-medium text-slate-300 hover:text-white hover:bg-white/10 rounded-xl transition-colors">Korzyści</a>
+                <a href="realizacje.html"
+                    class="mobile-link block px-4 py-3 text-base font-medium text-slate-300 hover:text-white hover:bg-white/10 rounded-xl transition-colors">Realizacje</a>
+                <a href="#kalkulator"
+                    class="mobile-link block px-4 py-3 text-base font-medium text-slate-300 hover:text-white hover:bg-white/10 rounded-xl transition-colors">Kalkulator</a>
+                <a href="#kontakt"
+                    class="mobile-link block px-4 py-3 mt-4 text-center text-base font-medium text-white bg-blue-600 hover:bg-blue-500 rounded-xl transition-all duration-200 shadow-[0_0_15px_rgba(59,130,246,0.4)]">Kontakt</a>
             </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
     <section class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden flex flex-col justify-center min-h-[90vh]">
-        
+
         <!-- Obrazy aut "przyklejone" do narożników sekcji (za elementami statystyk) -->
         <div class="absolute inset-0 pointer-events-none z-0 overflow-hidden">
-            <img src="zdjecia/mustang.png" alt="" class="absolute bottom-0 right-0 w-[32rem] sm:w-[45rem] md:w-[70rem] lg:w-[80rem] max-w-none opacity-85 mix-blend-screen translate-x-[10%] md:translate-x-[5%] translate-y-[5%] [mask-image:linear-gradient(to_top,rgba(0,0,0,1)_10%,rgba(0,0,0,0)_80%)] -webkit-mask-image:linear-gradient(to_top,rgba(0,0,0,1)_10%,rgba(0,0,0,0)_80%)">
+            <img src="zdjecia/mustang.png" alt=""
+                class="absolute bottom-0 right-0 w-[32rem] sm:w-[45rem] md:w-[70rem] lg:w-[80rem] max-w-none opacity-85 mix-blend-screen translate-x-[10%] md:translate-x-[5%] translate-y-[5%] [mask-image:linear-gradient(to_top,rgba(0,0,0,1)_10%,rgba(0,0,0,0)_80%)] -webkit-mask-image:linear-gradient(to_top,rgba(0,0,0,1)_10%,rgba(0,0,0,0)_80%)">
         </div>
 
         <!-- Subtle Ambient Glow -->
@@ -123,31 +145,38 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
             <div class="text-center max-w-4xl mx-auto mb-16">
                 <!-- Trust Badge / Ping -->
-                <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/5 border border-white/10 text-sm font-medium text-blue-400 mb-8 backdrop-blur-sm shadow-sm hidden sm:inline-flex">
+                <div
+                    class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/5 border border-white/10 text-sm font-medium text-blue-400 mb-8 backdrop-blur-sm shadow-sm hidden sm:inline-flex">
                     <span class="relative flex h-2 w-2">
-                      <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
-                      <span class="relative inline-flex rounded-full h-2 w-2 bg-blue-500"></span>
+                        <span
+                            class="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
+                        <span class="relative inline-flex rounded-full h-2 w-2 bg-blue-500"></span>
                     </span>
                     Zaufany importer aut klas premium
                 </div>
 
                 <!-- Headline -->
-                <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight text-white mb-6 leading-tight lg:leading-[1.1]">
-                    Spełnij Amerykański Sen.<br class="hidden md:block"/>
-                    <span class="text-slate-200">Import Aut z <span class="text-blue-500 font-extrabold">USA</span> i Kanady</span>
+                <h1
+                    class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight text-white mb-6 leading-tight lg:leading-[1.1]">
+                    Spełnij Amerykański Sen.<br class="hidden md:block" />
+                    <span class="text-slate-200">Import Aut z <span class="text-blue-500 font-extrabold">USA</span> i
+                        Kanady</span>
                 </h1>
 
                 <!-- Subheadline -->
-                <p class="mt-6 text-lg sm:text-xl md:text-2xl text-slate-400 font-light max-w-2xl mx-auto leading-relaxed">
+                <p
+                    class="mt-6 text-lg sm:text-xl md:text-2xl text-slate-400 font-light max-w-2xl mx-auto leading-relaxed">
                     Kompleksowa obsługa: od licytacji po dostawę pod dom. Oszczędź do 40% względem cen w Europie.
                 </p>
-                
+
                 <!-- CTA Buttons -->
                 <div class="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
-                    <a href="#kontakt" class="px-8 py-4 text-base font-semibold text-white bg-blue-600 hover:bg-blue-500 rounded-full transition-all duration-300 transform hover:scale-105 shadow-[0_0_20px_rgba(59,130,246,0.3)]">
+                    <a href="#kontakt"
+                        class="px-8 py-4 text-base font-semibold text-white bg-blue-600 hover:bg-blue-500 rounded-full transition-all duration-300 transform hover:scale-105 shadow-[0_0_20px_rgba(59,130,246,0.3)]">
                         Rozpocznij import
                     </a>
-                    <a href="#proces" class="px-8 py-4 text-base font-semibold text-white bg-white/5 hover:bg-white/10 border border-white/10 rounded-full transition-all duration-300 backdrop-blur-sm">
+                    <a href="#proces"
+                        class="px-8 py-4 text-base font-semibold text-white bg-white/5 hover:bg-white/10 border border-white/10 rounded-full transition-all duration-300 backdrop-blur-sm">
                         Poznaj proces
                     </a>
                 </div>
@@ -173,60 +202,87 @@
             </div>
 
 
-            
+
         </div>
     </section>
 
     <!-- Proces Section -->
     <section id="proces" class="py-24 relative border-t border-white/5 bg-[#050505] overflow-hidden">
         <!-- Subtelny deseń (kratka) w tle i lekki gradient -->
-        <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-blue-900/10 via-transparent to-transparent pointer-events-none"></div>
-        <div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik00MCAwSDB2NDBoNDBWMEoiIGZpbGw9Im5vbmUiIHN0cm9rZT0icmdiYSgyNTUsMjU1LDI1NSwwLjAyKSIgc3Ryb2tlLXdpZHRoPSIxIi8+Cjwvc3ZnPg==')] opacity-50 pointer-events-none"></div>
+        <div
+            class="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-blue-900/10 via-transparent to-transparent pointer-events-none">
+        </div>
+        <div
+            class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik00MCAwSDB2NDBoNDBWMEoiIGZpbGw9Im5vbmUiIHN0cm9rZT0icmdiYSgyNTUsMjU1LDI1NSwwLjAyKSIgc3Ryb2tlLXdpZHRoPSIxIi8+Cjwvc3ZnPg==')] opacity-50 pointer-events-none">
+        </div>
 
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div class="text-center mb-16">
                 <h2 class="text-3xl md:text-5xl font-bold text-white mb-4">Prosty 4-etapowy Proces</h2>
                 <p class="text-slate-400 text-lg">Zajmujemy się wszystkim, od wyboru po dostawę do Twojego garażu.</p>
             </div>
-            
+
             <div class="grid grid-cols-1 md:grid-cols-4 gap-8 relative">
                 <!-- Connector Line -->
-                <div class="hidden md:block absolute top-12 left-[10%] right-[10%] h-[1px] bg-gradient-to-r from-transparent via-blue-500/50 to-transparent -z-10"></div>
-                
+                <div
+                    class="hidden md:block absolute top-12 left-[10%] right-[10%] h-[1px] bg-gradient-to-r from-transparent via-blue-500/50 to-transparent -z-10">
+                </div>
+
                 <!-- Step 1 -->
                 <div class="text-center flex flex-col items-center group">
-                    <div class="w-24 h-24 rounded-full bg-slate-900 border border-slate-700 flex items-center justify-center mb-6 group-hover:border-blue-500 transition-colors duration-300 shadow-lg">
-                        <svg class="w-10 h-10 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    <div
+                        class="w-24 h-24 rounded-full bg-slate-900 border border-slate-700 flex items-center justify-center mb-6 group-hover:border-blue-500 transition-colors duration-300 shadow-lg">
+                        <svg class="w-10 h-10 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z">
+                            </path>
+                        </svg>
                     </div>
                     <h3 class="text-xl font-bold text-white mb-2">1. Licytacja</h3>
-                    <p class="text-slate-400 text-sm">Wyszukiwanie, wycena zniszczeń i licytacja z gwarancją najlepszej ceny.</p>
+                    <p class="text-slate-400 text-sm">Wyszukiwanie, wycena zniszczeń i licytacja z gwarancją najlepszej
+                        ceny.</p>
                 </div>
-                
+
                 <!-- Step 2 -->
                 <div class="text-center flex flex-col items-center group">
-                    <div class="w-24 h-24 rounded-full bg-slate-900 border border-slate-700 flex items-center justify-center mb-6 group-hover:border-blue-500 transition-colors duration-300 shadow-lg">
-                        <svg class="w-10 h-10 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"></path></svg>
+                    <div
+                        class="w-24 h-24 rounded-full bg-slate-900 border border-slate-700 flex items-center justify-center mb-6 group-hover:border-blue-500 transition-colors duration-300 shadow-lg">
+                        <svg class="w-10 h-10 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"></path>
+                        </svg>
                     </div>
                     <h3 class="text-xl font-bold text-white mb-2">2. Transport</h3>
                     <p class="text-slate-400 text-sm">Bezpieczny transport kołowy i fracht morski z ubezpieczeniem.</p>
                 </div>
-                
+
                 <!-- Step 3 -->
                 <div class="text-center flex flex-col items-center group">
-                    <div class="w-24 h-24 rounded-full bg-slate-900 border border-slate-700 flex items-center justify-center mb-6 group-hover:border-blue-500 transition-colors duration-300 shadow-lg">
-                        <svg class="w-10 h-10 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    <div
+                        class="w-24 h-24 rounded-full bg-slate-900 border border-slate-700 flex items-center justify-center mb-6 group-hover:border-blue-500 transition-colors duration-300 shadow-lg">
+                        <svg class="w-10 h-10 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
                     </div>
                     <h3 class="text-xl font-bold text-white mb-2">3. Odprawa</h3>
-                    <p class="text-slate-400 text-sm">Kompleksowa obsługa celna Niemcy/Holandia/Polska bez Twoich nerwów.</p>
+                    <p class="text-slate-400 text-sm">Kompleksowa obsługa celna Niemcy/Holandia/Polska bez Twoich
+                        nerwów.</p>
                 </div>
-                
+
                 <!-- Step 4 -->
                 <div class="text-center flex flex-col items-center group">
-                    <div class="w-24 h-24 rounded-full bg-slate-900 border border-slate-700 flex items-center justify-center mb-6 group-hover:border-blue-500 transition-colors duration-300 shadow-lg">
-                        <svg class="w-10 h-10 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path></svg>
+                    <div
+                        class="w-24 h-24 rounded-full bg-slate-900 border border-slate-700 flex items-center justify-center mb-6 group-hover:border-blue-500 transition-colors duration-300 shadow-lg">
+                        <svg class="w-10 h-10 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6">
+                            </path>
+                        </svg>
                     </div>
                     <h3 class="text-xl font-bold text-white mb-2">4. Dostawa</h3>
-                    <p class="text-slate-400 text-sm">Bezpośredni rozładunek pod Twoim domem lub warsztatem w Polsce.</p>
+                    <p class="text-slate-400 text-sm">Bezpośredni rozładunek pod Twoim domem lub warsztatem w Polsce.
+                    </p>
                 </div>
             </div>
         </div>
@@ -238,67 +294,100 @@
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
                 <div>
                     <h2 class="text-3xl md:text-5xl font-bold text-white mb-6">Dlaczego warto importować z USA?</h2>
-                    <p class="text-slate-400 text-lg mb-8">Amerykański rynek motoryzacyjny to gwarancja lepszego wyposażenia i ogromnych oszczędności.</p>
-                    
+                    <p class="text-slate-400 text-lg mb-8">Amerykański rynek motoryzacyjny to gwarancja lepszego
+                        wyposażenia i ogromnych oszczędności.</p>
+
                     <ul class="space-y-6">
                         <li class="flex gap-4">
-                            <div class="flex-shrink-0 w-12 h-12 rounded-full bg-blue-500/10 flex items-center justify-center border border-blue-500/20">
-                                <svg class="w-6 h-6 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path></svg>
+                            <div
+                                class="flex-shrink-0 w-12 h-12 rounded-full bg-blue-500/10 flex items-center justify-center border border-blue-500/20">
+                                <svg class="w-6 h-6 text-blue-400" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+                                </svg>
                             </div>
                             <div>
                                 <h4 class="text-xl font-bold text-white mb-1">Znacznie niższe ceny</h4>
-                                <p class="text-slate-400 text-sm">Oszczędności sięgają nawet 30-40% w porównaniu do rynku europejskiego po uwzględnieniu wszystkich opłat.</p>
+                                <p class="text-slate-400 text-sm">Oszczędności sięgają nawet 30-40% w porównaniu do
+                                    rynku europejskiego po uwzględnieniu wszystkich opłat.</p>
                             </div>
                         </li>
                         <li class="flex gap-4">
-                            <div class="flex-shrink-0 w-12 h-12 rounded-full bg-blue-500/10 flex items-center justify-center border border-blue-500/20">
-                                <svg class="w-6 h-6 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"></path></svg>
+                            <div
+                                class="flex-shrink-0 w-12 h-12 rounded-full bg-blue-500/10 flex items-center justify-center border border-blue-500/20">
+                                <svg class="w-6 h-6 text-blue-400" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z">
+                                    </path>
+                                </svg>
                             </div>
                             <div>
                                 <h4 class="text-xl font-bold text-white mb-1">Lepszy stan i bogate wyposażenie</h4>
-                                <p class="text-slate-400 text-sm">Auta z USA to często najwyższe opcje wyposażenia i silniki niedostępne na rynku europejskim.</p>
+                                <p class="text-slate-400 text-sm">Auta z USA to często najwyższe opcje wyposażenia i
+                                    silniki niedostępne na rynku europejskim.</p>
                             </div>
                         </li>
                         <li class="flex gap-4">
-                            <div class="flex-shrink-0 w-12 h-12 rounded-full bg-blue-500/10 flex items-center justify-center border border-blue-500/20">
-                                <svg class="w-6 h-6 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+                            <div
+                                class="flex-shrink-0 w-12 h-12 rounded-full bg-blue-500/10 flex items-center justify-center border border-blue-500/20">
+                                <svg class="w-6 h-6 text-blue-400" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z">
+                                    </path>
+                                </svg>
                             </div>
                             <div>
                                 <h4 class="text-xl font-bold text-white mb-1">Pełna historia CARFAX</h4>
-                                <p class="text-slate-400 text-sm">Przejrzystość przebiegu, liczby właścicieli, historii serwisowej i ewentualnych kolizji.</p>
+                                <p class="text-slate-400 text-sm">Przejrzystość przebiegu, liczby właścicieli, historii
+                                    serwisowej i ewentualnych kolizji.</p>
                             </div>
                         </li>
                     </ul>
                 </div>
-                
+
                 <!-- Grafika Porównania Cen (Wykres) -->
-                <div class="w-full rounded-3xl bg-[#0a0a0a]/80 backdrop-blur-md border border-white/10 shadow-[0_0_30px_rgba(59,130,246,0.05)] p-6 md:p-8 flex flex-col justify-center relative overflow-hidden group">
-                    <div class="absolute inset-0 bg-gradient-to-br from-blue-600/5 to-transparent pointer-events-none"></div>
-                    
+                <div
+                    class="w-full rounded-3xl bg-[#0a0a0a]/80 backdrop-blur-md border border-white/10 shadow-[0_0_30px_rgba(59,130,246,0.05)] p-6 md:p-8 flex flex-col justify-center relative overflow-hidden group">
+                    <div class="absolute inset-0 bg-gradient-to-br from-blue-600/5 to-transparent pointer-events-none">
+                    </div>
+
                     <h3 class="text-xl md:text-2xl font-bold text-white mb-2 relative z-10 flex items-center gap-3">
-                        <svg class="w-6 h-6 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path></svg>
+                        <svg class="w-6 h-6 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z">
+                            </path>
+                        </svg>
                         Przykładowe Oszczędności
                     </h3>
-                    <p class="text-slate-400 text-sm mb-8 relative z-10">Zestawienie uwzględnia wszystkie koszty importu do Polski pod dom.</p>
-                    
+                    <p class="text-slate-400 text-sm mb-8 relative z-10">Zestawienie uwzględnia wszystkie koszty importu
+                        do Polski pod dom.</p>
+
                     <div class="space-y-6 relative z-10">
                         <!-- Car 1 -->
                         <div>
                             <div class="flex justify-between items-end mb-2">
                                 <span class="font-bold text-white text-sm md:text-base">Ford Mustang GT (2021)</span>
-                                <span class="text-green-400 text-xs md:text-sm font-bold bg-green-500/10 px-2 py-1 rounded border border-green-500/20">-30%</span>
+                                <span
+                                    class="text-green-400 text-xs md:text-sm font-bold bg-green-500/10 px-2 py-1 rounded border border-green-500/20">-30%</span>
                             </div>
                             <div class="space-y-1.5">
                                 <div class="flex items-center gap-3">
                                     <span class="text-xs text-slate-500 font-medium w-14">USA</span>
-                                    <div class="flex-1 h-7 bg-slate-800/50 rounded-full overflow-hidden border border-slate-700/50">
-                                        <div class="h-full bg-gradient-to-r from-blue-700 to-blue-500 rounded-full flex items-center px-3 text-[10px] sm:text-xs font-bold text-white shadow-[0_0_10px_rgba(59,130,246,0.3)] transition-all duration-1000 ease-out" style="width: 70%">140 000 PLN</div>
+                                    <div
+                                        class="flex-1 h-7 bg-slate-800/50 rounded-full overflow-hidden border border-slate-700/50">
+                                        <div class="h-full bg-gradient-to-r from-blue-700 to-blue-500 rounded-full flex items-center px-3 text-[10px] sm:text-xs font-bold text-white shadow-[0_0_10px_rgba(59,130,246,0.3)] transition-all duration-1000 ease-out"
+                                            style="width: 70%">140 000 PLN</div>
                                     </div>
                                 </div>
                                 <div class="flex items-center gap-3">
                                     <span class="text-xs text-slate-500 font-medium w-14">Polska</span>
-                                    <div class="flex-1 h-7 bg-slate-800/50 rounded-full overflow-hidden border border-slate-700/50">
-                                        <div class="h-full bg-slate-600 rounded-full flex items-center px-3 text-[10px] sm:text-xs font-bold text-slate-200 transition-all duration-1000 ease-out" style="width: 100%">200 000 PLN</div>
+                                    <div
+                                        class="flex-1 h-7 bg-slate-800/50 rounded-full overflow-hidden border border-slate-700/50">
+                                        <div class="h-full bg-slate-600 rounded-full flex items-center px-3 text-[10px] sm:text-xs font-bold text-slate-200 transition-all duration-1000 ease-out"
+                                            style="width: 100%">200 000 PLN</div>
                                     </div>
                                 </div>
                             </div>
@@ -308,19 +397,24 @@
                         <div>
                             <div class="flex justify-between items-end mb-2">
                                 <span class="font-bold text-white text-sm md:text-base">BMW M4 Competition (2022)</span>
-                                <span class="text-green-400 text-xs md:text-sm font-bold bg-green-500/10 px-2 py-1 rounded border border-green-500/20">-37%</span>
+                                <span
+                                    class="text-green-400 text-xs md:text-sm font-bold bg-green-500/10 px-2 py-1 rounded border border-green-500/20">-37%</span>
                             </div>
                             <div class="space-y-1.5">
                                 <div class="flex items-center gap-3">
                                     <span class="text-xs text-slate-500 font-medium w-14">USA</span>
-                                    <div class="flex-1 h-7 bg-slate-800/50 rounded-full overflow-hidden border border-slate-700/50">
-                                        <div class="h-full bg-gradient-to-r from-blue-700 to-blue-500 rounded-full flex items-center px-3 text-[10px] sm:text-xs font-bold text-white shadow-[0_0_10px_rgba(59,130,246,0.3)] transition-all duration-1000 ease-out" style="width: 63%">250 000 PLN</div>
+                                    <div
+                                        class="flex-1 h-7 bg-slate-800/50 rounded-full overflow-hidden border border-slate-700/50">
+                                        <div class="h-full bg-gradient-to-r from-blue-700 to-blue-500 rounded-full flex items-center px-3 text-[10px] sm:text-xs font-bold text-white shadow-[0_0_10px_rgba(59,130,246,0.3)] transition-all duration-1000 ease-out"
+                                            style="width: 63%">250 000 PLN</div>
                                     </div>
                                 </div>
                                 <div class="flex items-center gap-3">
                                     <span class="text-xs text-slate-500 font-medium w-14">Polska</span>
-                                    <div class="flex-1 h-7 bg-slate-800/50 rounded-full overflow-hidden border border-slate-700/50">
-                                        <div class="h-full bg-slate-600 rounded-full flex items-center px-3 text-[10px] sm:text-xs font-bold text-slate-200 transition-all duration-1000 ease-out" style="width: 100%">400 000 PLN</div>
+                                    <div
+                                        class="flex-1 h-7 bg-slate-800/50 rounded-full overflow-hidden border border-slate-700/50">
+                                        <div class="h-full bg-slate-600 rounded-full flex items-center px-3 text-[10px] sm:text-xs font-bold text-slate-200 transition-all duration-1000 ease-out"
+                                            style="width: 100%">400 000 PLN</div>
                                     </div>
                                 </div>
                             </div>
@@ -330,19 +424,24 @@
                         <div>
                             <div class="flex justify-between items-end mb-2">
                                 <span class="font-bold text-white text-sm md:text-base">Mercedes G-Klasa (2020)</span>
-                                <span class="text-green-400 text-xs md:text-sm font-bold bg-green-500/10 px-2 py-1 rounded border border-green-500/20">-25%</span>
+                                <span
+                                    class="text-green-400 text-xs md:text-sm font-bold bg-green-500/10 px-2 py-1 rounded border border-green-500/20">-25%</span>
                             </div>
                             <div class="space-y-1.5">
                                 <div class="flex items-center gap-3">
                                     <span class="text-xs text-slate-500 font-medium w-14">USA</span>
-                                    <div class="flex-1 h-7 bg-slate-800/50 rounded-full overflow-hidden border border-slate-700/50">
-                                        <div class="h-full bg-gradient-to-r from-blue-700 to-blue-500 rounded-full flex items-center px-3 text-[10px] sm:text-xs font-bold text-white shadow-[0_0_10px_rgba(59,130,246,0.3)] transition-all duration-1000 ease-out" style="width: 75%">450 000 PLN</div>
+                                    <div
+                                        class="flex-1 h-7 bg-slate-800/50 rounded-full overflow-hidden border border-slate-700/50">
+                                        <div class="h-full bg-gradient-to-r from-blue-700 to-blue-500 rounded-full flex items-center px-3 text-[10px] sm:text-xs font-bold text-white shadow-[0_0_10px_rgba(59,130,246,0.3)] transition-all duration-1000 ease-out"
+                                            style="width: 75%">450 000 PLN</div>
                                     </div>
                                 </div>
                                 <div class="flex items-center gap-3">
                                     <span class="text-xs text-slate-500 font-medium w-14">Polska</span>
-                                    <div class="flex-1 h-7 bg-slate-800/50 rounded-full overflow-hidden border border-slate-700/50">
-                                        <div class="h-full bg-slate-600 rounded-full flex items-center px-3 text-[10px] sm:text-xs font-bold text-slate-200 transition-all duration-1000 ease-out" style="width: 100%">600 000 PLN</div>
+                                    <div
+                                        class="flex-1 h-7 bg-slate-800/50 rounded-full overflow-hidden border border-slate-700/50">
+                                        <div class="h-full bg-slate-600 rounded-full flex items-center px-3 text-[10px] sm:text-xs font-bold text-slate-200 transition-all duration-1000 ease-out"
+                                            style="width: 100%">600 000 PLN</div>
                                     </div>
                                 </div>
                             </div>
@@ -358,45 +457,74 @@
     <section class="py-24 relative border-t border-white/5">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
-                <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-blue-500/10 border border-blue-500/20 text-sm font-medium text-blue-400 mb-4">
+                <div
+                    class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-blue-500/10 border border-blue-500/20 text-sm font-medium text-blue-400 mb-4">
                     Nasze realizacje
                 </div>
                 <h2 class="text-3xl md:text-5xl font-bold text-white mb-4">Ostatnio Sprowadzone</h2>
                 <p class="text-slate-400 text-lg">Zobacz, ile oszczędzają z nami klienci z całej Polski.</p>
             </div>
-            
+
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <!-- Card 1 -->
-                <div class="bg-[#111] border border-white/5 rounded-3xl overflow-hidden hover:border-white/10 transition-colors duration-300 group">
+                <div
+                    class="bg-[#111] border border-white/5 rounded-3xl overflow-hidden hover:border-white/10 transition-colors duration-300 group">
                     <!-- Slider Container -->
-                    <div class="relative w-full aspect-[4/3] sm:aspect-video overflow-hidden group/slider border-b border-white/5 bg-slate-900 select-none">
-                        
+                    <div
+                        class="relative w-full aspect-[4/3] sm:aspect-video overflow-hidden group/slider border-b border-white/5 bg-slate-900 select-none">
+
                         <!-- After Image Layer (Bottom) -->
-                        <div class="absolute inset-0 w-full h-full flex flex-col items-center justify-center p-6 text-center">
-                            <div class="w-16 h-16 rounded-full bg-slate-800 border border-slate-700 flex items-center justify-center mb-3">
-                                <svg class="w-8 h-8 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 002-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path></svg>
+                        <div
+                            class="absolute inset-0 w-full h-full flex flex-col items-center justify-center p-6 text-center">
+                            <div
+                                class="w-16 h-16 rounded-full bg-slate-800 border border-slate-700 flex items-center justify-center mb-3">
+                                <svg class="w-8 h-8 text-slate-500" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                        d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 002-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10">
+                                    </path>
+                                </svg>
                             </div>
                             <span class="text-slate-400 font-medium text-sm">Zdjęcie po imporcie</span>
-                            <div class="absolute top-4 right-4 bg-blue-600/90 backdrop-blur text-[10px] uppercase font-bold px-2 py-1 rounded text-white shadow-lg pointer-events-none">Gotowe</div>
+                            <div
+                                class="absolute top-4 right-4 bg-blue-600/90 backdrop-blur text-[10px] uppercase font-bold px-2 py-1 rounded text-white shadow-lg pointer-events-none">
+                                Gotowe</div>
                         </div>
 
                         <!-- Before Image Layer (Top) -->
-                        <div class="absolute inset-0 w-full h-full z-10 before-layer origin-left" style="clip-path: polygon(0 0, 50% 0, 50% 100%, 0 100%);">
-                            <img src="zdjecia/copart.png" alt="Aukcja 1" class="absolute inset-0 w-full h-full object-cover pointer-events-none">
-                            <div class="absolute inset-0 bg-black/20 pointer-events-none group-hover/slider:bg-black/0 transition-colors duration-500"></div>
-                            <div class="absolute top-4 left-4 bg-red-600/90 backdrop-blur text-[10px] uppercase font-bold px-2 py-1 rounded text-white shadow-lg pointer-events-none">Aukcja Copart</div>
+                        <div class="absolute inset-0 w-full h-full z-10 before-layer origin-left"
+                            style="clip-path: polygon(0 0, 50% 0, 50% 100%, 0 100%);">
+                            <img src="zdjecia/copart.png" alt="Aukcja 1"
+                                class="absolute inset-0 w-full h-full object-cover pointer-events-none">
+                            <div
+                                class="absolute inset-0 bg-black/20 pointer-events-none group-hover/slider:bg-black/0 transition-colors duration-500">
+                            </div>
+                            <div
+                                class="absolute top-4 left-4 bg-red-600/90 backdrop-blur text-[10px] uppercase font-bold px-2 py-1 rounded text-white shadow-lg pointer-events-none">
+                                Aukcja Copart</div>
                         </div>
 
                         <!-- Slider Handle Line -->
-                        <div class="absolute top-0 bottom-0 w-0.5 bg-white z-20 slider-line pointer-events-none shadow-[0_0_10px_rgba(0,0,0,0.5)]" style="left: 50%;">
-                            <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-8 h-8 bg-white rounded-full flex items-center justify-center shadow-[0_0_15px_rgba(0,0,0,0.5)] text-slate-800 transition-transform duration-200 group-hover/slider:scale-110">
-                                <svg class="w-3 h-3 absolute left-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M15 19l-7-7 7-7"></path></svg>
-                                <svg class="w-3 h-3 absolute right-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M9 5l7 7-7 7"></path></svg>
+                        <div class="absolute top-0 bottom-0 w-0.5 bg-white z-20 slider-line pointer-events-none shadow-[0_0_10px_rgba(0,0,0,0.5)]"
+                            style="left: 50%;">
+                            <div
+                                class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-8 h-8 bg-white rounded-full flex items-center justify-center shadow-[0_0_15px_rgba(0,0,0,0.5)] text-slate-800 transition-transform duration-200 group-hover/slider:scale-110">
+                                <svg class="w-3 h-3 absolute left-1" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                                        d="M15 19l-7-7 7-7"></path>
+                                </svg>
+                                <svg class="w-3 h-3 absolute right-1" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                                        d="M9 5l7 7-7 7"></path>
+                                </svg>
                             </div>
                         </div>
 
                         <!-- Range Input -->
-                        <input type="range" min="0" max="100" value="50" class="absolute inset-0 w-full h-full opacity-0 cursor-ew-resize z-30 ba-slider">
+                        <input type="range" min="0" max="100" value="50"
+                            class="absolute inset-0 w-full h-full opacity-0 cursor-ew-resize z-30 ba-slider">
                     </div>
                     <div class="p-6">
                         <div class="flex justify-between items-start mb-4">
@@ -404,48 +532,82 @@
                                 <h3 class="text-xl font-bold text-white">Audi RS5 Sportback</h3>
                                 <p class="text-slate-500 text-sm">Rocznik 2021 • 2.9 TFSI</p>
                             </div>
-                            <div class="bg-slate-800 text-white text-xs font-bold px-3 py-1 rounded-md border border-slate-700">
+                            <div
+                                class="bg-slate-800 text-white text-xs font-bold px-3 py-1 rounded-md border border-slate-700">
                                 USA
                             </div>
                         </div>
-                        <div class="mt-6 flex items-center gap-2 bg-gradient-to-r from-green-500/10 to-transparent p-3 rounded-lg border-l-2 border-green-500">
-                            <svg class="w-5 h-5 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                            <span class="text-green-400 font-bold text-sm tracking-wide">Zaoszczędzono: 42 000 PLN</span>
+                        <div
+                            class="mt-6 flex items-center gap-2 bg-gradient-to-r from-green-500/10 to-transparent p-3 rounded-lg border-l-2 border-green-500">
+                            <svg class="w-5 h-5 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                            <span class="text-green-400 font-bold text-sm tracking-wide">Zaoszczędzono: 42 000
+                                PLN</span>
                         </div>
                     </div>
                 </div>
 
                 <!-- Card 2 -->
-                <div class="bg-[#111] border border-white/5 rounded-3xl overflow-hidden hover:border-white/10 transition-colors duration-300 group">
+                <div
+                    class="bg-[#111] border border-white/5 rounded-3xl overflow-hidden hover:border-white/10 transition-colors duration-300 group">
                     <!-- Slider Container -->
-                    <div class="relative w-full aspect-[4/3] sm:aspect-video overflow-hidden group/slider border-b border-white/5 bg-slate-900 select-none">
-                        
+                    <div
+                        class="relative w-full aspect-[4/3] sm:aspect-video overflow-hidden group/slider border-b border-white/5 bg-slate-900 select-none">
+
                         <!-- After Image Layer (Bottom) -->
-                        <div class="absolute inset-0 w-full h-full flex flex-col items-center justify-center p-6 text-center">
-                            <div class="w-16 h-16 rounded-full bg-slate-800 border border-slate-700 flex items-center justify-center mb-3">
-                                <svg class="w-8 h-8 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 002-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path></svg>
+                        <div
+                            class="absolute inset-0 w-full h-full flex flex-col items-center justify-center p-6 text-center">
+                            <div
+                                class="w-16 h-16 rounded-full bg-slate-800 border border-slate-700 flex items-center justify-center mb-3">
+                                <svg class="w-8 h-8 text-slate-500" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                        d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 002-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10">
+                                    </path>
+                                </svg>
                             </div>
                             <span class="text-slate-400 font-medium text-sm">Zdjęcie po imporcie</span>
-                            <div class="absolute top-4 right-4 bg-blue-600/90 backdrop-blur text-[10px] uppercase font-bold px-2 py-1 rounded text-white shadow-lg pointer-events-none">Gotowe</div>
+                            <div
+                                class="absolute top-4 right-4 bg-blue-600/90 backdrop-blur text-[10px] uppercase font-bold px-2 py-1 rounded text-white shadow-lg pointer-events-none">
+                                Gotowe</div>
                         </div>
 
                         <!-- Before Image Layer (Top) -->
-                        <div class="absolute inset-0 w-full h-full z-10 before-layer origin-left" style="clip-path: polygon(0 0, 50% 0, 50% 100%, 0 100%);">
-                            <img src="zdjecia/copart2.png" alt="Aukcja 2" class="absolute inset-0 w-full h-full object-cover pointer-events-none">
-                            <div class="absolute inset-0 bg-black/20 pointer-events-none group-hover/slider:bg-black/0 transition-colors duration-500"></div>
-                            <div class="absolute top-4 left-4 bg-red-600/90 backdrop-blur text-[10px] uppercase font-bold px-2 py-1 rounded text-white shadow-lg pointer-events-none">Aukcja Copart</div>
+                        <div class="absolute inset-0 w-full h-full z-10 before-layer origin-left"
+                            style="clip-path: polygon(0 0, 50% 0, 50% 100%, 0 100%);">
+                            <img src="zdjecia/copart2.png" alt="Aukcja 2"
+                                class="absolute inset-0 w-full h-full object-cover pointer-events-none">
+                            <div
+                                class="absolute inset-0 bg-black/20 pointer-events-none group-hover/slider:bg-black/0 transition-colors duration-500">
+                            </div>
+                            <div
+                                class="absolute top-4 left-4 bg-red-600/90 backdrop-blur text-[10px] uppercase font-bold px-2 py-1 rounded text-white shadow-lg pointer-events-none">
+                                Aukcja Copart</div>
                         </div>
 
                         <!-- Slider Handle Line -->
-                        <div class="absolute top-0 bottom-0 w-0.5 bg-white z-20 slider-line pointer-events-none shadow-[0_0_10px_rgba(0,0,0,0.5)]" style="left: 50%;">
-                            <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-8 h-8 bg-white rounded-full flex items-center justify-center shadow-[0_0_15px_rgba(0,0,0,0.5)] text-slate-800 transition-transform duration-200 group-hover/slider:scale-110">
-                                <svg class="w-3 h-3 absolute left-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M15 19l-7-7 7-7"></path></svg>
-                                <svg class="w-3 h-3 absolute right-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M9 5l7 7-7 7"></path></svg>
+                        <div class="absolute top-0 bottom-0 w-0.5 bg-white z-20 slider-line pointer-events-none shadow-[0_0_10px_rgba(0,0,0,0.5)]"
+                            style="left: 50%;">
+                            <div
+                                class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-8 h-8 bg-white rounded-full flex items-center justify-center shadow-[0_0_15px_rgba(0,0,0,0.5)] text-slate-800 transition-transform duration-200 group-hover/slider:scale-110">
+                                <svg class="w-3 h-3 absolute left-1" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                                        d="M15 19l-7-7 7-7"></path>
+                                </svg>
+                                <svg class="w-3 h-3 absolute right-1" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                                        d="M9 5l7 7-7 7"></path>
+                                </svg>
                             </div>
                         </div>
 
                         <!-- Range Input -->
-                        <input type="range" min="0" max="100" value="50" class="absolute inset-0 w-full h-full opacity-0 cursor-ew-resize z-30 ba-slider">
+                        <input type="range" min="0" max="100" value="50"
+                            class="absolute inset-0 w-full h-full opacity-0 cursor-ew-resize z-30 ba-slider">
                     </div>
                     <div class="p-6">
                         <div class="flex justify-between items-start mb-4">
@@ -453,48 +615,82 @@
                                 <h3 class="text-xl font-bold text-white">Jeep Grand Cherokee</h3>
                                 <p class="text-slate-500 text-sm">Rocznik 2022 • Limited</p>
                             </div>
-                            <div class="bg-slate-800 text-white text-xs font-bold px-3 py-1 rounded-md border border-slate-700">
+                            <div
+                                class="bg-slate-800 text-white text-xs font-bold px-3 py-1 rounded-md border border-slate-700">
                                 USA
                             </div>
                         </div>
-                        <div class="mt-6 flex items-center gap-2 bg-gradient-to-r from-green-500/10 to-transparent p-3 rounded-lg border-l-2 border-green-500">
-                            <svg class="w-5 h-5 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                            <span class="text-green-400 font-bold text-sm tracking-wide">Zaoszczędzono: 55 000 PLN</span>
+                        <div
+                            class="mt-6 flex items-center gap-2 bg-gradient-to-r from-green-500/10 to-transparent p-3 rounded-lg border-l-2 border-green-500">
+                            <svg class="w-5 h-5 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                            <span class="text-green-400 font-bold text-sm tracking-wide">Zaoszczędzono: 55 000
+                                PLN</span>
                         </div>
                     </div>
                 </div>
 
                 <!-- Card 3 -->
-                <div class="bg-[#111] border border-white/5 rounded-3xl overflow-hidden hover:border-white/10 transition-colors duration-300 group">
+                <div
+                    class="bg-[#111] border border-white/5 rounded-3xl overflow-hidden hover:border-white/10 transition-colors duration-300 group">
                     <!-- Slider Container -->
-                    <div class="relative w-full aspect-[4/3] sm:aspect-video overflow-hidden group/slider border-b border-white/5 bg-slate-900 select-none">
-                        
+                    <div
+                        class="relative w-full aspect-[4/3] sm:aspect-video overflow-hidden group/slider border-b border-white/5 bg-slate-900 select-none">
+
                         <!-- After Image Layer (Bottom) -->
-                        <div class="absolute inset-0 w-full h-full flex flex-col items-center justify-center p-6 text-center">
-                            <div class="w-16 h-16 rounded-full bg-slate-800 border border-slate-700 flex items-center justify-center mb-3">
-                                <svg class="w-8 h-8 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 002-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path></svg>
+                        <div
+                            class="absolute inset-0 w-full h-full flex flex-col items-center justify-center p-6 text-center">
+                            <div
+                                class="w-16 h-16 rounded-full bg-slate-800 border border-slate-700 flex items-center justify-center mb-3">
+                                <svg class="w-8 h-8 text-slate-500" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                        d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 002-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10">
+                                    </path>
+                                </svg>
                             </div>
                             <span class="text-slate-400 font-medium text-sm">Zdjęcie po imporcie</span>
-                            <div class="absolute top-4 right-4 bg-blue-600/90 backdrop-blur text-[10px] uppercase font-bold px-2 py-1 rounded text-white shadow-lg pointer-events-none">Gotowe</div>
+                            <div
+                                class="absolute top-4 right-4 bg-blue-600/90 backdrop-blur text-[10px] uppercase font-bold px-2 py-1 rounded text-white shadow-lg pointer-events-none">
+                                Gotowe</div>
                         </div>
 
                         <!-- Before Image Layer (Top) -->
-                        <div class="absolute inset-0 w-full h-full z-10 before-layer origin-left" style="clip-path: polygon(0 0, 50% 0, 50% 100%, 0 100%);">
-                            <img src="zdjecia/copart3.png" alt="Aukcja 3" class="absolute inset-0 w-full h-full object-cover pointer-events-none">
-                            <div class="absolute inset-0 bg-black/20 pointer-events-none group-hover/slider:bg-black/0 transition-colors duration-500"></div>
-                            <div class="absolute top-4 left-4 bg-red-600/90 backdrop-blur text-[10px] uppercase font-bold px-2 py-1 rounded text-white shadow-lg pointer-events-none">Aukcja Copart</div>
+                        <div class="absolute inset-0 w-full h-full z-10 before-layer origin-left"
+                            style="clip-path: polygon(0 0, 50% 0, 50% 100%, 0 100%);">
+                            <img src="zdjecia/copart3.png" alt="Aukcja 3"
+                                class="absolute inset-0 w-full h-full object-cover pointer-events-none">
+                            <div
+                                class="absolute inset-0 bg-black/20 pointer-events-none group-hover/slider:bg-black/0 transition-colors duration-500">
+                            </div>
+                            <div
+                                class="absolute top-4 left-4 bg-red-600/90 backdrop-blur text-[10px] uppercase font-bold px-2 py-1 rounded text-white shadow-lg pointer-events-none">
+                                Aukcja Copart</div>
                         </div>
 
                         <!-- Slider Handle Line -->
-                        <div class="absolute top-0 bottom-0 w-0.5 bg-white z-20 slider-line pointer-events-none shadow-[0_0_10px_rgba(0,0,0,0.5)]" style="left: 50%;">
-                            <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-8 h-8 bg-white rounded-full flex items-center justify-center shadow-[0_0_15px_rgba(0,0,0,0.5)] text-slate-800 transition-transform duration-200 group-hover/slider:scale-110">
-                                <svg class="w-3 h-3 absolute left-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M15 19l-7-7 7-7"></path></svg>
-                                <svg class="w-3 h-3 absolute right-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M9 5l7 7-7 7"></path></svg>
+                        <div class="absolute top-0 bottom-0 w-0.5 bg-white z-20 slider-line pointer-events-none shadow-[0_0_10px_rgba(0,0,0,0.5)]"
+                            style="left: 50%;">
+                            <div
+                                class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-8 h-8 bg-white rounded-full flex items-center justify-center shadow-[0_0_15px_rgba(0,0,0,0.5)] text-slate-800 transition-transform duration-200 group-hover/slider:scale-110">
+                                <svg class="w-3 h-3 absolute left-1" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                                        d="M15 19l-7-7 7-7"></path>
+                                </svg>
+                                <svg class="w-3 h-3 absolute right-1" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                                        d="M9 5l7 7-7 7"></path>
+                                </svg>
                             </div>
                         </div>
 
                         <!-- Range Input -->
-                        <input type="range" min="0" max="100" value="50" class="absolute inset-0 w-full h-full opacity-0 cursor-ew-resize z-30 ba-slider">
+                        <input type="range" min="0" max="100" value="50"
+                            class="absolute inset-0 w-full h-full opacity-0 cursor-ew-resize z-30 ba-slider">
                     </div>
                     <div class="p-6">
                         <div class="flex justify-between items-start mb-4">
@@ -502,13 +698,19 @@
                                 <h3 class="text-xl font-bold text-white">Porsche Macan S</h3>
                                 <p class="text-slate-500 text-sm">Rocznik 2020 • 3.0 V6</p>
                             </div>
-                            <div class="bg-slate-800 text-white text-xs font-bold px-3 py-1 rounded-md border border-slate-700">
+                            <div
+                                class="bg-slate-800 text-white text-xs font-bold px-3 py-1 rounded-md border border-slate-700">
                                 Kanada
                             </div>
                         </div>
-                        <div class="mt-6 flex items-center gap-2 bg-gradient-to-r from-green-500/10 to-transparent p-3 rounded-lg border-l-2 border-green-500">
-                            <svg class="w-5 h-5 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                            <span class="text-green-400 font-bold text-sm tracking-wide">Zaoszczędzono: 30 000 PLN</span>
+                        <div
+                            class="mt-6 flex items-center gap-2 bg-gradient-to-r from-green-500/10 to-transparent p-3 rounded-lg border-l-2 border-green-500">
+                            <svg class="w-5 h-5 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                            <span class="text-green-400 font-bold text-sm tracking-wide">Zaoszczędzono: 30 000
+                                PLN</span>
                         </div>
                     </div>
                 </div>
@@ -519,14 +721,17 @@
     <!-- Trust Badges -->
     <section class="py-12 border-y border-white/5 bg-slate-900/20">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <p class="text-center text-slate-500 text-sm font-medium uppercase tracking-widest mb-8">Nasi główni partnerzy i domy aukcyjne</p>
+            <p class="text-center text-slate-500 text-sm font-medium uppercase tracking-widest mb-8">Nasi główni
+                partnerzy i domy aukcyjne</p>
             <div class="flex flex-wrap justify-center gap-12 md:gap-24 items-center">
                 <!-- Copart Logo -->
-                <div class="flex items-center justify-center h-12 md:h-16 w-auto transition-transform duration-300 transform hover:scale-110">
+                <div
+                    class="flex items-center justify-center h-12 md:h-16 w-auto transition-transform duration-300 transform hover:scale-110">
                     <img src="zdjecia/copartlogo.png" alt="Copart Logo" class="max-h-full w-auto object-contain">
                 </div>
                 <!-- IAAI Logo -->
-                <div class="flex items-center justify-center h-12 md:h-16 w-auto transition-transform duration-300 transform hover:scale-110">
+                <div
+                    class="flex items-center justify-center h-12 md:h-16 w-auto transition-transform duration-300 transform hover:scale-110">
                     <img src="zdjecia/iaailogo.png" alt="IAAI Logo" class="max-h-full w-auto object-contain">
                 </div>
             </div>
@@ -537,65 +742,86 @@
     <section id="kalkulator" class="py-24 relative border-t border-white/5 bg-[#0a0a0a]">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16 reveal-trigger">
-                <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-blue-500/10 border border-blue-500/20 text-sm font-medium text-blue-400 mb-4">
+                <div
+                    class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-blue-500/10 border border-blue-500/20 text-sm font-medium text-blue-400 mb-4">
                     Przejrzyste koszty
                 </div>
                 <h2 class="text-3xl md:text-5xl font-bold text-white mb-4">Kalkulator Importu</h2>
                 <p class="text-slate-400 text-lg">Sprawdź szacunkowe koszty sprowadzenia auta pod dom.</p>
             </div>
-            
-            <div class="max-w-3xl mx-auto bg-gradient-to-b from-slate-800 to-[#0a0a0a] border border-blue-500/20 rounded-3xl p-8 shadow-[0_0_40px_rgba(59,130,246,0.15)] ring-1 ring-white/10 reveal-trigger relative overflow-hidden">
-                <div class="absolute top-0 inset-x-0 h-px w-full bg-gradient-to-r from-transparent via-blue-500/50 to-transparent"></div>
+
+            <div
+                class="max-w-3xl mx-auto bg-gradient-to-b from-slate-800 to-[#0a0a0a] border border-blue-500/20 rounded-3xl p-8 shadow-[0_0_40px_rgba(59,130,246,0.15)] ring-1 ring-white/10 reveal-trigger relative overflow-hidden">
+                <div
+                    class="absolute top-0 inset-x-0 h-px w-full bg-gradient-to-r from-transparent via-blue-500/50 to-transparent">
+                </div>
                 <form id="calculator-form" class="space-y-6 relative z-10">
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                         <!-- Cena na aukcji -->
                         <div>
-                            <label class="block text-sm font-medium text-slate-300 mb-2">Kwota licytacji na aukcji (USD)</label>
+                            <label class="block text-sm font-medium text-slate-300 mb-2">Kwota licytacji na aukcji
+                                (USD)</label>
                             <div class="relative">
                                 <span class="absolute inset-y-0 left-0 pl-4 flex items-center text-slate-500">$</span>
-                                <input type="number" id="auction-price" placeholder="np. 15000" class="w-full bg-black/50 border border-slate-700 rounded-xl py-3 pl-10 pr-4 text-white placeholder-slate-600 focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition-colors">
+                                <input type="number" id="auction-price" placeholder="np. 15000"
+                                    class="w-full bg-black/50 border border-slate-700 rounded-xl py-3 pl-10 pr-4 text-white placeholder-slate-600 focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition-colors">
                             </div>
                         </div>
-                        
+
                         <!-- Typ pojazdu -->
                         <div>
                             <label class="block text-sm font-medium text-slate-300 mb-2">Rodzaj pojazdu</label>
                             <div class="relative">
-                                <select id="vehicle-type" class="w-full bg-black/50 border border-slate-700 rounded-xl py-3 px-4 text-white focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition-colors appearance-none">
+                                <select id="vehicle-type"
+                                    class="w-full bg-black/50 border border-slate-700 rounded-xl py-3 px-4 text-white focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition-colors appearance-none">
                                     <option value="osobowy">Samochód osobowy</option>
                                     <option value="zabytkowy">Pojazd zabytkowy</option>
                                 </select>
-                                <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-4 text-slate-400">
-                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                                <div
+                                    class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-4 text-slate-400">
+                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M19 9l-7 7-7-7"></path>
+                                    </svg>
                                 </div>
                             </div>
                         </div>
 
                         <!-- Pojemność silnika -->
                         <div class="md:col-span-2">
-                            <label class="block text-sm font-medium text-slate-300 mb-2">Pojemność silnika (dot. akcyzy)</label>
+                            <label class="block text-sm font-medium text-slate-300 mb-2">Pojemność silnika (dot.
+                                akcyzy)</label>
                             <div class="relative">
-                                <select id="engine-capacity" class="w-full bg-black/50 border border-slate-700 rounded-xl py-3 px-4 text-white focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition-colors appearance-none">
+                                <select id="engine-capacity"
+                                    class="w-full bg-black/50 border border-slate-700 rounded-xl py-3 px-4 text-white focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition-colors appearance-none">
                                     <option value="do2">Do 2.0L (akcyza 3,1%)</option>
                                     <option value="powyzej2">Powyżej 2.0L (akcyza 18,6%)</option>
                                     <option value="zabytkowy_engine">Pojazd zabytkowy (zwolniony - 0%)</option>
                                 </select>
-                                <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-4 text-slate-400">
-                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                                <div
+                                    class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-4 text-slate-400">
+                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M19 9l-7 7-7-7"></path>
+                                    </svg>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    
-                    <button type="button" onclick="calculateTotal()" class="w-full bg-blue-600 hover:bg-blue-500 text-white font-bold py-4 rounded-xl transition-all duration-300 transform hover:scale-[1.02] shadow-[0_0_20px_rgba(59,130,246,0.2)]">
+
+                    <button type="button" onclick="calculateTotal()"
+                        class="w-full bg-blue-600 hover:bg-blue-500 text-white font-bold py-4 rounded-xl transition-all duration-300 transform hover:scale-[1.02] shadow-[0_0_20px_rgba(59,130,246,0.2)]">
                         Oblicz koszty
                     </button>
-                    
+
                     <!-- Wynik -->
-                    <div id="calculator-result" class="hidden mt-6 bg-black/40 border border-blue-500/30 rounded-2xl p-6 text-center">
+                    <div id="calculator-result"
+                        class="hidden mt-6 bg-black/40 border border-blue-500/30 rounded-2xl p-6 text-center">
                         <p class="text-slate-400 text-sm mb-2">Szacowany koszt całkowity pod domem (PLN):</p>
                         <p class="text-4xl font-bold text-white tracking-tight" id="total-cost">--</p>
-                        <p class="text-xs text-slate-500 mt-4">* Kwota zawiera: cenę auta, prowizję domu aukcyjnego, transport lądowy i morski, odprawę celną (VAT + cło) oraz akcyzę. Nie zawiera kosztów ewentualnej naprawy.</p>
+                        <p class="text-xs text-slate-500 mt-4">* Kwota zawiera: cenę auta, prowizję domu aukcyjnego,
+                            transport lądowy i morski, odprawę celną (VAT + cło) oraz akcyzę. Nie zawiera kosztów
+                            ewentualnej naprawy.</p>
                     </div>
                 </form>
             </div>
@@ -605,22 +831,33 @@
     <!-- Kontakt Section -->
     <section id="kontakt" class="py-24 relative border-t border-white/5 bg-gradient-to-b from-[#0a0a0a] to-[#050505]">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="max-w-5xl mx-auto bg-gradient-to-br from-slate-900 via-slate-900 to-black border border-white/10 rounded-3xl overflow-hidden shadow-2xl reveal-trigger">
+            <div
+                class="max-w-5xl mx-auto bg-gradient-to-br from-slate-900 via-slate-900 to-black border border-white/10 rounded-3xl overflow-hidden shadow-2xl reveal-trigger">
                 <div class="grid grid-cols-1 lg:grid-cols-2">
-                    
+
                     <!-- Lewa strona - Info -->
-                    <div class="p-10 lg:p-12 border-b lg:border-b-0 lg:border-r border-white/5 relative overflow-hidden">
+                    <div
+                        class="p-10 lg:p-12 border-b lg:border-b-0 lg:border-r border-white/5 relative overflow-hidden">
                         <!-- Tło -->
-                        <div class="absolute top-0 left-0 w-full h-full bg-[radial-gradient(ellipse_at_top_left,_var(--tw-gradient-stops))] from-blue-900/20 via-transparent to-transparent pointer-events-none"></div>
-                        
+                        <div
+                            class="absolute top-0 left-0 w-full h-full bg-[radial-gradient(ellipse_at_top_left,_var(--tw-gradient-stops))] from-blue-900/20 via-transparent to-transparent pointer-events-none">
+                        </div>
+
                         <div class="relative z-10">
                             <h2 class="text-3xl font-bold text-white mb-4">Znajdź Mój Wymarzony Samochód</h2>
-                            <p class="text-slate-400 mb-8 leading-relaxed">Poszukujesz konkretnego modelu? Wypełnij formularz, a my znajdziemy najlepsze egzemplarze na najbliższych aukcjach w USA i przedstawimy kompletną symulację kosztów.</p>
-                            
+                            <p class="text-slate-400 mb-8 leading-relaxed">Poszukujesz konkretnego modelu? Wypełnij
+                                formularz, a my znajdziemy najlepsze egzemplarze na najbliższych aukcjach w USA i
+                                przedstawimy kompletną symulację kosztów.</p>
+
                             <div class="space-y-6">
                                 <div class="flex items-center gap-4">
                                     <div class="w-12 h-12 rounded-full bg-blue-500/10 flex items-center justify-center">
-                                        <svg class="w-5 h-5 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+                                        <svg class="w-5 h-5 text-blue-400" fill="none" stroke="currentColor"
+                                            viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z">
+                                            </path>
+                                        </svg>
                                     </div>
                                     <div>
                                         <p class="text-white font-medium">+48 123 456 789</p>
@@ -629,46 +866,58 @@
                                 </div>
                                 <div class="flex items-center gap-4">
                                     <div class="w-12 h-12 rounded-full bg-blue-500/10 flex items-center justify-center">
-                                        <svg class="w-5 h-5 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                                        <svg class="w-5 h-5 text-blue-400" fill="none" stroke="currentColor"
+                                            viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
+                                            </path>
+                                        </svg>
                                     </div>
                                     <div>
-                                        <p class="text-white font-medium">kontakt@usadirect.pl</p>
+                                        <p class="text-white font-medium">kontakt@nazwafirmy.pl</p>
                                         <p class="text-slate-500 text-sm">Odpowiadamy w 24 godziny</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    
+
                     <!-- Prawa strona - Formularz -->
                     <div class="p-10 lg:p-12">
                         <form class="space-y-4">
                             <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                                 <div>
                                     <label class="block text-sm font-medium text-slate-400 mb-1">Imię</label>
-                                    <input type="text" class="w-full bg-black/30 border border-slate-700/50 rounded-lg py-2.5 px-4 text-white focus:outline-none focus:border-blue-500 transition-colors">
+                                    <input type="text"
+                                        class="w-full bg-black/30 border border-slate-700/50 rounded-lg py-2.5 px-4 text-white focus:outline-none focus:border-blue-500 transition-colors">
                                 </div>
                                 <div>
                                     <label class="block text-sm font-medium text-slate-400 mb-1">Telefon</label>
-                                    <input type="tel" class="w-full bg-black/30 border border-slate-700/50 rounded-lg py-2.5 px-4 text-white focus:outline-none focus:border-blue-500 transition-colors">
+                                    <input type="tel"
+                                        class="w-full bg-black/30 border border-slate-700/50 rounded-lg py-2.5 px-4 text-white focus:outline-none focus:border-blue-500 transition-colors">
                                 </div>
                             </div>
                             <div>
-                                <label class="block text-sm font-medium text-slate-400 mb-1">Poszukiwany model (Marka, Model, Rocznik)</label>
-                                <input type="text" placeholder="np. Ford Mustang 2021+" class="w-full bg-black/30 border border-slate-700/50 rounded-lg py-2.5 px-4 text-white placeholder-slate-600 focus:outline-none focus:border-blue-500 transition-colors">
+                                <label class="block text-sm font-medium text-slate-400 mb-1">Poszukiwany model (Marka,
+                                    Model, Rocznik)</label>
+                                <input type="text" placeholder="np. Ford Mustang 2021+"
+                                    class="w-full bg-black/30 border border-slate-700/50 rounded-lg py-2.5 px-4 text-white placeholder-slate-600 focus:outline-none focus:border-blue-500 transition-colors">
                             </div>
                             <div>
-                                <label class="block text-sm font-medium text-slate-400 mb-1">Planowany budżet (PLN)</label>
-                                <input type="text" class="w-full bg-black/30 border border-slate-700/50 rounded-lg py-2.5 px-4 text-white focus:outline-none focus:border-blue-500 transition-colors">
+                                <label class="block text-sm font-medium text-slate-400 mb-1">Planowany budżet
+                                    (PLN)</label>
+                                <input type="text"
+                                    class="w-full bg-black/30 border border-slate-700/50 rounded-lg py-2.5 px-4 text-white focus:outline-none focus:border-blue-500 transition-colors">
                             </div>
                             <div class="pt-2">
-                                <button type="submit" class="w-full bg-white text-black hover:bg-slate-200 font-bold py-3.5 rounded-lg transition-colors duration-300 shadow-[0_0_15px_rgba(255,255,255,0.2)]">
+                                <button type="submit"
+                                    class="w-full bg-white text-black hover:bg-slate-200 font-bold py-3.5 rounded-lg transition-colors duration-300 shadow-[0_0_15px_rgba(255,255,255,0.2)]">
                                     Wyślij zapytanie
                                 </button>
                             </div>
                         </form>
                     </div>
-                    
+
                 </div>
             </div>
         </div>
@@ -694,7 +943,7 @@
                 anchor.addEventListener('click', function (e) {
                     const targetId = this.getAttribute('href');
                     if (targetId === '#') return;
-                    
+
                     const targetElement = document.querySelector(targetId);
                     if (targetElement) {
                         e.preventDefault();
@@ -714,7 +963,7 @@
 
             const observer = new IntersectionObserver((entries, observer) => {
                 entries.forEach(entry => {
-                    if(entry.isIntersecting) {
+                    if (entry.isIntersecting) {
                         entry.target.classList.add('opacity-100', 'translate-y-0');
                         entry.target.classList.remove('opacity-0', 'translate-y-8');
                         observer.unobserve(entry.target);
@@ -726,7 +975,7 @@
             document.querySelectorAll('.reveal-trigger, section > div').forEach((el, index) => {
                 // Ignore elements that shouldn't animate
                 if (el.classList.contains('hero-glow')) return;
-                
+
                 // Add staggered delay based on original position (optional logic)
                 el.style.transitionDelay = `${(index % 3) * 100}ms`;
                 el.classList.add('transition-all', 'duration-700', 'opacity-0', 'translate-y-8');
@@ -748,7 +997,7 @@
             // 4. Mobile Menu setup
             const mobileMenuBtn = document.querySelector('nav button');
             const mobileMenu = document.getElementById('mobile-menu');
-            
+
             mobileMenuBtn.addEventListener('click', () => {
                 mobileMenu.classList.toggle('hidden');
             });
@@ -770,8 +1019,8 @@
             const engineCap = document.getElementById('engine-capacity').value;
             const resultBox = document.getElementById('calculator-result');
             const totalText = document.getElementById('total-cost');
-            
-            if(!priceInput || priceInput <= 0) {
+
+            if (!priceInput || priceInput <= 0) {
                 // Subtly shake the input if invalid
                 const inputEl = document.getElementById('auction-price');
                 inputEl.classList.add('translate-x-1', 'border-red-500');
@@ -780,10 +1029,10 @@
             }
 
             const auctionPriceUSD = parseFloat(priceInput);
-            
+
             // Standard Currency Mock (1 USD = 4.05 PLN)
             const exchangeRate = 4.05;
-            
+
             // 1. Fixed / Minimal Fees (from image rules)
             const auctionFeeUSD = 400; // od $400 - założenie min. z cennika
             const transportOceanUSD = 800; // transport morski od $800
@@ -795,7 +1044,7 @@
             const carPricePLN = auctionPriceUSD * exchangeRate;
             const transportPLN = totalTransportUSD * exchangeRate;
             const auctionFeePLN = auctionFeeUSD * exchangeRate;
-            
+
             // Wartość celna = wartość auta + transport oceaniczny (oraz koszty lądowe przed przekroczeniem granicy UE, do uproszczenia bierzemy całość bazy)
             const wartoscCelnaPLN = carPricePLN + transportPLN + auctionFeePLN;
 
@@ -807,12 +1056,12 @@
             if (vehicleType === 'zabytkowy') {
                 cloRate = 0.0;
                 vatRate = 0.08; // 8% VAT
-                akcyzaRate = 0.0; 
+                akcyzaRate = 0.0;
             } else {
                 // Samochód osobowy
                 cloRate = 0.10; // 10% Cło
                 vatRate = 0.23; // 23% VAT
-                
+
                 if (engineCap === 'do2') {
                     akcyzaRate = 0.031; // 3,1% Akcyza
                 } else if (engineCap === 'powyzej2') {
@@ -829,11 +1078,11 @@
 
             // Final Total PLN
             const finalTotalPLN = Math.round(wartoscCelnaPLN + cloAmount + akcyzaAmount + vatAmount + prowizjaPLN);
-            
+
             // Display Result
             resultBox.classList.remove('hidden');
             totalText.innerText = finalTotalPLN.toLocaleString('pl-PL') + " PLN";
-            
+
             // Animation for text update
             totalText.style.opacity = '0';
             setTimeout(() => {
@@ -845,15 +1094,15 @@
         }
 
         // Auto-select classic car engine capacity when toggling vehicle type
-        document.getElementById('vehicle-type').addEventListener('change', function(e) {
+        document.getElementById('vehicle-type').addEventListener('change', function (e) {
             const engineSelect = document.getElementById('engine-capacity');
-            if(e.target.value === 'zabytkowy') {
+            if (e.target.value === 'zabytkowy') {
                 engineSelect.value = 'zabytkowy_engine';
                 // Animuj zmianę tła selecta aby zwrócić uwagę użytkownika
                 engineSelect.parentElement.classList.add('animate-pulse');
                 setTimeout(() => engineSelect.parentElement.classList.remove('animate-pulse'), 1000);
             } else {
-                if(engineSelect.value === 'zabytkowy_engine') {
+                if (engineSelect.value === 'zabytkowy_engine') {
                     engineSelect.value = 'do2'; // Revert to passenger default
                 }
             }
@@ -868,15 +1117,16 @@
                 while (currentElem && !currentElem.classList.contains('group/slider')) {
                     currentElem = currentElem.parentElement;
                 }
-                if(currentElem) {
+                if (currentElem) {
                     const beforeLayer = currentElem.querySelector('.before-layer');
                     const sliderLine = currentElem.querySelector('.slider-line');
-                    
-                    if(beforeLayer) beforeLayer.style.clipPath = `polygon(0 0, ${val}% 0, ${val}% 100%, 0 100%)`;
-                    if(sliderLine) sliderLine.style.left = `${val}%`;
+
+                    if (beforeLayer) beforeLayer.style.clipPath = `polygon(0 0, ${val}% 0, ${val}% 100%, 0 100%)`;
+                    if (sliderLine) sliderLine.style.left = `${val}%`;
                 }
             });
         });
     </script>
 </body>
+
 </html>
